@@ -40,7 +40,7 @@ flowchart TB
 
 ## case_yujian效果展示
 
-![yujian.png](\yujian.png)
+![yujian.png](yujian.png)
 
 
 
