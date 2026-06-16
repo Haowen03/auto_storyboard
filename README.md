@@ -11,6 +11,25 @@ LTX 扩展：`ltx_workflow.py`
 
 ## 工作流总览
 
+
+| 阶段    | `--pipeline` | 产出                             |
+| ----- | ------------ | ------------------------------ |
+| 仅参考帧  | `frames`     | `case_final_frameXX.png`       |
+| 仅 LTX | `video`      | `case_ltx_shot_XX_candidates/` |
+| 全流程   | `full`       | 参考帧 + LTX 候选视频                 |
+
+支持 **断点续传**：每次运行会扫描磁盘产物，将 `workflow_state.json` 中的 `step` 前推到与目录一致的阶段再继续。
+
+---
+
+## case_yujian效果展示
+
+![yujian.png](yujian.png)
+<video src="case_ltx_shot1.mp4" controls width="800"></video>
+<video src="case_ltx_shot2.mp4" controls width="800"></video>
+
+
+---
 ```mermaid
 flowchart TB
     subgraph P1["第一阶段：多参考帧生成"]
@@ -27,25 +46,6 @@ flowchart TB
 
     E --> F
 ```
-
-| 阶段    | `--pipeline` | 产出                             |
-| ----- | ------------ | ------------------------------ |
-| 仅参考帧  | `frames`     | `case_final_frameXX.png`       |
-| 仅 LTX | `video`      | `case_ltx_shot_XX_candidates/` |
-| 全流程   | `full`       | 参考帧 + LTX 候选视频                 |
-
-支持 **断点续传**：每次运行会扫描磁盘产物，将 `workflow_state.json` 中的 `step` 前推到与目录一致的阶段再继续。
-
----
-
-## case_yujian效果展示
-
-![yujian.png](yujian.png)
-
-
-
-
-
 ---
 
 ## 第一阶段：多参考帧生成
