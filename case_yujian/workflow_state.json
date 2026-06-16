@@ -1,0 +1,499 @@
+{
+  "step": "done",
+  "resources_done": [
+    "case_char_01.png",
+    "case_scene_01.png",
+    "case_prop_01.png"
+  ],
+  "base_frames_done": [
+    "case_base_frame01.png",
+    "case_base_frame02.png",
+    "case_base_frame03.png",
+    "case_base_frame04.png",
+    "case_base_frame05.png",
+    "case_base_frame06.png",
+    "case_base_frame07.png",
+    "case_base_frame08.png",
+    "case_base_frame09.png"
+  ],
+  "edit_frames_done": [
+    "case_edit_frame01.png",
+    "case_edit_frame02.png",
+    "case_edit_frame03.png",
+    "case_edit_frame04.png",
+    "case_edit_frame05.png",
+    "case_edit_frame06.png",
+    "case_edit_frame07.png",
+    "case_edit_frame08.png",
+    "case_edit_frame09.png"
+  ],
+  "current_frame_index": 9,
+  "total_frames": 9,
+  "init_plan_response": "## 资源库来源（当前：auto / 自动）\n\n### 1) 视频概述\n本序列讲述小龙女在幽静竹林中召唤本命飞剑，随后轻盈跃上剑身，御剑升空并飞向远方的完整过程。画面风格为写实武侠与东方奇幻结合，强调人物衣袂飘动的动态美感、飞剑的金属质感与光效，以及竹林环境的清冷氛围。\n\n### 2) 帧数选择小节\n- **参考帧数量：N=9**\n- **选择理由：** 用户明确要求“9宫格参考”，且指令指定严格沿用 v6.3 标准 9 宫格逻辑，不启用任意帧压缩。为了完整呈现“召唤-站上-起飞-远去”的动作链条，9帧能提供足够的叙事节奏（B1建立-B3动作-B5变化-B7结果-B9收束）。\n- **模式：9宫格核心模式**\n\n### 3) 人物、场景、道具数量\n- **人物 (1):** 小龙女 (Xiaolongnu)\n- **场景 (1):** 幽静竹林 (Bamboo Forest Clearing)\n- **道具 (1):** 寒冰飞剑 (Ice Sword) - *Hero Product*\n\n### 4) 资源库构建\n\n**Case Char: Xiaolongnu**\n> Generate case_char_01.png: A single full-body character reference of Xiaolongnu, standing in a neutral relaxed pose, front three-quarter view only, plain white background. She wears flowing white Hanfu robes with subtle silver embroidery on the collar and cuffs, long black hair tied simply with a white ribbon, fair skin, and calm elegant facial features. No props, no weapons, no complex background. High resolution, sharp focus on facial structure and robe details.\n\n**Case Scene: Bamboo Forest**\n> Generate case_scene_01.png: A serene bamboo forest clearing at twilight, soft blue ambient lighting, tall green bamboo stalks surrounding a small open space with mossy ground and scattered fallen leaves. A large flat rock is visible in the mid-ground left as a spatial anchor. Depth of field blurs distant bamboo, keeping the central clearing sharp. No characters, no props. Cinematic composition, realistic texture.\n\n**Case Prop: Ice Sword**\n> Generate case_prop_01.png: A single slender ancient Chinese Jian sword floating horizontally against a plain dark background. The blade is translucent ice-blue metal with faint glowing runes along the spine, emitting a subtle cold mist. The hilt is wrapped in white silk with a jade tassel. Sharp focus on the blade geometry and glow effects. No hands holding it, no characters. Hero product shot.\n\n### 5) 初步基础剧情 9 帧规划表\n\n| 基础帧 | 对应9宫格beat | 剧情节点 | 基础镜头 | 开场或镜头意图 | 位置锚点 | 朝向关系 | 画面重点 | 连续性变化 |\n|---|---|---|---|---|---|---|---|---|\n| case_base_frame01.png | B1 | 小龙女伫立竹林，神情宁静 | Medium Shot | 建立人物身份与环境关系 | 双脚站在苔藓地面上 | Three-quarter front view facing camera | 面部表情、白色长袍、竹林背景 | 初始状态 |\n| case_base_frame02.png | B2 | 抬手结印，准备召唤 | Medium Shot | 展示施法前摇动作 | 双手抬至胸前 | Three-quarter front view facing camera | 手部姿态、衣袖褶皱 | 手臂从下垂变为抬起 |\n| case_base_frame03.png | B3 | 寒冰飞剑凭空显现 | Wide Shot | 关键道具首次出现 | 剑悬浮于身前半空 | Three-quarter front view facing camera | 剑与人物的相对位置、剑的光效 | 新实体(Sword)出现 |\n| case_base_frame04.png | B4 | 飞剑平稳降至脚边 | Wide Shot | 建立人与剑的空间接触预备 | 剑尖触地，位于脚前 | Three-quarter front view facing camera | 剑尖与鞋尖的接近关系 | 剑的位置从空中降至地面 |\n| case_base_frame05.png | B5 | 单脚踏上剑身 | Medium Shot | 动作启动，重心转移 | 右脚踩在剑身中部 | Side view facing right | 脚与剑面的接触点、身体平衡 | 人物姿态从站立变为单脚支撑 |\n| case_base_frame06.png | B6 | 全身站上飞剑，衣袂扬起 | Wide Shot | 力量升级，完全控制道具 | 双脚并拢站在剑上 | Back view facing away from camera | 全身轮廓、裙摆随风飘动 | 人物完全离开地面悬停 |\n| case_base_frame07.png | B7 | 飞剑加速向前冲出 | Wide Shot | 结果显现，动态模糊 | 人物与剑向画面深处移动 | Back view facing away from camera | 运动轨迹、身后留下的气流 | 位置从静止变为高速位移 |\n| case_base_frame08.png | B8 | 飞越竹林顶端 | Wide Shot | 展示空间跨越与高度 | 位于竹梢上方 | Three-quarter back view | 人物与竹林顶部的层次关系 | 高度提升，背景变为天空 |\n| case_base_frame09.png | B9 | 化作光点消失在远方 | Wide Shot | 收束，留白意境 | 远处天际线 | Back view facing away from camera | 渺小的身影、广阔的天空 | 人物变小直至融入背景 |\n\n### 6) case_base_frame01.png 开场意图与朝向选择\n\n**开场意图：**\nB1 的核心任务是确立“小龙女”这一角色身份及其所处的“幽静竹林”环境。观众需要清晰辨认人物的服饰特征（白衣、汉服）、面部神态（清冷、宁静）以及她与周围环境的基本比例关系。\n\n**朝向选择：**\n选用 **Three-quarter front view (三分之二正面)**。\n- **叙事功能：** 这种视角既能展示人物正面的服饰细节（领口、刺绣）和面部表情，又能通过身体的轻微侧转展现一定的立体感和空间纵深，避免纯正面视图的呆板。\n- **Subject–Camera Relation：** 人物面向镜头方向（facing the camera），确保观众能直接建立情感连接。相机位于人物前方略偏侧的位置，形成 `Camera -> Character -> Scene Core (Bamboo)` 的拓扑结构，让人物成为视觉焦点，同时背景竹林作为环境衬托清晰可见。\n\n### 7) 第一基础帧的英文一段式生成 prompt\n\n```text\nGenerate case_base_frame01.png: Use case_char_01.png as the strict reference for Xiaolongnu's identity, preserving her white Hanfu, facial features, and hairstyle. Use case_scene_01.png as the strict reference for the bamboo forest environment, preserving the mossy ground and tall bamboo stalks. Camera setup: medium shot with three-quarter front view, clearly showing Xiaolongnu standing calmly on the mossy ground. Place Xiaolongnu in the center foreground, facing the camera, ensuring her facial structure, collar, and front robe pattern are clearly visible. The bamboo forest surrounds her in the background, with soft twilight lighting casting gentle shadows. Do not show any swords or magical effects, do not change her pose to action, and do not introduce other characters. Cinematic wuxia fantasy style.\n```",
+  "pending_frame_prompt": "",
+  "edit_plan_response": "## v6.14 第二阶段：全帧镜头再设计规划表\n\n### 1) 基础帧整体质检报告\n- **人物一致性**：✅ 优秀。小龙女的面部特征、高马尾白飘带发型、白色汉服银纹刺绣在 9 帧中保持高度稳定，未出现身份漂移。\n- **场景一致性**：✅ 优秀。竹林环境、左侧巨石锚点、冷蓝色调光影在 B1-B7 中连贯；B8-B9 的环境光变化（天空/云海）符合“飞升远去”的叙事逻辑，非生成错误。\n- **道具状态**：✅ 优秀。寒冰飞剑的冰晶质感、发光符文、白色流苏在 B3-B9 中形态准确。B7 曾出现“持剑奔跑”的错误，但已在 B8 修正为“站立御剑”，后续帧均正确。\n- **剧情可读性**：✅ 完整。召唤→踏剑→升空→远去的动作链条清晰，空间关系（人剑相对位置）在基础帧中已锁定。\n- **帧数合规**：✅ N=9，严格对应 B1-B9。\n\n---\n\n### 2) 全帧再编辑规划表（v6.14 Dual-Block Ready）\n\n| 基础帧 | 对应 beat | 剧情功能 | 目标 edit 镜头 | 基础帧诊断 | 编辑强度 | 编辑策略 | 需要修复/增强 (Story State for Compiler) | 必须保持 (For Pick Review) |\n|---|---|---|---|---|---|---|---|---|\n| case_base_frame01.png | B1 | Establish / Identity Reveal | Stronger wide shot with foreground depth | Base is standard medium; lacks environmental immersion and cinematic scale. | Level 3 | Medium → Stronger wide + Foreground bamboo occlusion + Depth layering | Xiaolongnu standing calmly in the bamboo clearing with the large grey rock visible on the left | Character identity, robe details, rock anchor, cold blue lighting, three-quarter front orientation |\n| case_base_frame02.png | B2 | Awakening / Spell Casting | Face close-up with hand gesture foreground | Base shows full upper body; emotional intensity of casting is diluted by wide framing. | Level 4 | Medium → Face close-up + Hands as foreground frame + Shallow DOF | Xiaolongnu raising both hands to chest level in a casting gesture with focused expression | Facial structure, hand position near collar, white Hanfu sleeves, silver embroidery, calm focused expression |\n| case_base_frame03.png | B3 | Detail Activation / Prop Reveal | Close-up detail shot with character context | Base is medium shot; sword details (runes, glow) are visible but not emphasized; hand-sword relation needs tightening. | Level 4 | Medium → Close-up detail + Sword as primary focus + Hands framing sword | Ice sword floating horizontally in mid-air directly in front of Xiaolongnu's raised palms | Sword translucent ice texture, glowing runes, white tassel, hand proximity, character face softly visible in background |\n| case_base_frame04.png | B4 | Spatial Preparation / Grounding | Low-angle shot from ground level | Base is wide shot at eye-level; lacks the sense of sword hovering just above moss; ground texture underutilized. | Level 3 | Wide → Low-angle + Ground-level perspective + Sword-ground gap emphasis | Ice sword floating just above the mossy ground directly in front of Xiaolongnu's white shoes | Sword horizontal orientation, moss texture, shoe proximity, character standing posture, cold blue ambient light |\n| case_base_frame05.png | B5 | Motion Initiation / Contact Point | Foreground-detail composition (foot on blade) | Base is medium side view; foot-blade contact point is clear but lacks tactile weight and dynamic tension. | Level 4 | Medium → Foreground-detail + Foot-blade contact as visual center + Side profile preserved | Xiaolongnu's right foot stepping onto the middle of the floating sword blade while balancing on one leg | Foot placement on blade center, sword supporting weight, side profile silhouette, white robe flow, moss ground below |\n| case_base_frame06.png | B6 | Power Escalation / Full Mount | Overhead / High-angle wide shot | Base is wide back view; hovering state is clear but lacks the spatial drama of elevation above forest floor. | Level 4 | Wide → High-angle overhead + Elevated perspective + Forest floor as depth reference | Xiaolongnu standing fully on the Ice Sword hovering above the mossy ground with robes flowing backward | Full body on sword, sword horizontal under feet, elevated position above moss, bamboo forest background, wind-blown robes |\n| case_base_frame07.png | B7 | Motion / Trajectory Burst | Dynamic trajectory shot with motion blur | Base has motion blur but character was incorrectly holding sword; edit must reinforce standing pose while amplifying speed. | Level 4 | Wide → Dynamic trajectory + Strong motion blur + Standing pose correction | Xiaolongnu and the Ice Sword dashing forward along the bamboo path into the forest depth with strong speed lines | Standing pose on sword (NOT holding), forward motion direction, bamboo path trajectory, motion blur on background, robes blowing backward |\n| case_base_frame08.png | B8 | Climax / Hero Ascension | Low-angle hero shot against sky | Base is three-quarter back view at treetop level; lacks the heroic grandeur of ascending into open sky. | Level 4 | Wide → Low-angle hero + Sky backdrop + Bamboo tops as lower frame | Xiaolongnu flying high above the bamboo forest canopy on the Ice Sword with sky and clouds surrounding her | Standing pose on sword, sword horizontal under feet, sky background, bamboo tops below, white robes flowing in wind |\n| case_base_frame09.png | B9 | Closure / Symbolic Departure | Extreme wide symbolic shot with negative space | Base is wide shot; figure is small but could be more integrated with vast sky/cloud sea for poetic closure. | Level 3 | Wide → Extreme wide + Cloud sea horizon + Figure as tiny silhouette | Xiaolongnu and the Ice Sword as a tiny distant silhouette near the horizon above the cloud sea | Tiny figure scale, sword glow visible as point of light, vast sky and cloud background, sense of departure, bright atmosphere |\n\n---\n\n### 3) 镜头多样性预算核查 (v6.9 §21.4)\n\n| 指标 | 要求 | 实际 | 状态 |\n|---|---|---|---|\n| Neutral medium ≤ 1 | ≤ 1 | 0 | ✅ |\n| 特殊镜头 ≥ 6 | ≥ 6 | 9 (全部为特殊镜头) | ✅ |\n| Camera label 种类 ≥ 5 | ≥ 5 | 7种 (Stronger wide, Face CU, CU detail, Low-angle, Foreground-detail, Overhead, Extreme wide) | ✅ |\n| E2 = Face/Eye CU | 必须 | Face close-up | ✅ |\n| E7 = Low-angle hero | 推荐 | Low-angle hero (E8) + Dynamic trajectory (E7) | ✅ |\n| Level 1/2 合计 ≤ 1 | ≤ 1 | 0 (全部 Level 3/4) | ✅ |\n| 至少 2 种 Level | ≥ 2 | 2种 (Level 3 + Level 4) | ✅ |\n\n---\n\n### 4) 关键编辑策略说明\n\n**E1 (Level 3 - Stronger Wide):** 不是简单拉远，而是加入前景竹干遮挡（Foreground bamboo occlusion），创造三层纵深（前景竹/中景人+石/背景林），增强环境沉浸感。\n\n**E2 (Level 4 - Face CU):** 将双手结印姿态作为前景框架（Hand gesture foreground），面部居中，浅景深虚化背景竹林，聚焦施法瞬间的情感张力。\n\n**E3 (Level 4 - CU Detail):** 剑身横贯画面，双手在两侧 framing，剑身符文和冰晶质感占画面 60% 以上，人物面部在背景中柔焦可见，保留叙事上下文。\n\n**E4 (Level 3 - Low-angle):** 相机降至苔藓地面高度，仰视剑与鞋的间隙，强调\"悬浮\"的物理感，地面苔藓纹理清晰作为前景锚点。\n\n**E5 (Level 4 - Foreground-detail):** 脚与剑的接触点占据画面中心，侧面轮廓完整，剑身延伸至画面边缘，强调\"踏上\"的重量感和平衡感。\n\n**E6 (Level 4 - Overhead):** 相机升至人物斜上方，俯视剑与人，地面苔藓和巨石在下方形成深度参考，突出\"离地悬停\"的空间关系。\n\n**E7 (Level 4 - Dynamic Trajectory):** **关键修正帧**。必须确保人物是\"站在剑上\"而非\"手持剑\"。强化运动模糊的方向性（径向模糊），剑身拖尾光效增强速度感。\n\n**E8 (Level 4 - Low-angle Hero):** 相机从下方仰拍，人物与剑占据画面上半部，天空为背景，竹梢在画面底部形成框架，营造\"升仙\"的英雄气概。\n\n**E9 (Level 3 - Extreme Wide):** 人物缩小至画面 5% 以下，剑的光芒成为视觉锚点，云海地平线横贯画面下部，大量留白传达\"远去/消逝\"的意境。\n\n---\n\n### 5) 下一步执行指令\n\n规划表已完成，所有 9 帧的 **story_state**（英文画面内容句）、**camera_type**（目标镜头标签）、**visual_focus**（视觉焦点）均已明确，可直接用于 v6.14 Edit Prompt Compiler 生成表层 prompt。\n\n**请确认是否开始逐帧生成 case_edit_frame01.png ~ case_edit_frame09.png？**\n\n生成时将严格遵守：\n- 仅引用对应 `case_base_frame0x.png`（base-only 策略）\n- 双段式 prompt：Story-State Block + Camera Transformation Block\n- 无 Keep/Preserve 清单\n- 每帧必须有明确的 camera delta",
+  "edit_plan": [
+    {
+      "base_frame": "case_base_frame01.png",
+      "edit_frame": "case_edit_frame01.png",
+      "final_frame": "case_final_frame01.png",
+      "beat_mapping": "B1",
+      "story_function": "Establish / Identity Reveal",
+      "planned_edit_camera": "Stronger wide shot with foreground depth",
+      "diagnosis": "Base is standard medium; lacks environmental immersion and cinematic scale.",
+      "edit_level": "Level 3",
+      "edit_strategy": "Medium → Stronger wide + Foreground bamboo occlusion + Depth layering",
+      "fixes": "Xiaolongnu standing calmly in the bamboo clearing with the large grey rock visible on the left",
+      "keep": "Character identity, robe details, rock anchor, cold blue lighting, three-quarter front orientation",
+      "story_state": "Xiaolongnu standing calmly in the bamboo clearing with the large grey rock visible on the left",
+      "camera_type": "single-character heroic wide shot",
+      "visual_focus": "Xiaolongnu standing calmly in the bamboo clearing with the large grey rock visible on the left",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame02.png",
+      "edit_frame": "case_edit_frame02.png",
+      "final_frame": "case_final_frame02.png",
+      "beat_mapping": "B2",
+      "story_function": "Awakening / Spell Casting",
+      "planned_edit_camera": "Face close-up with hand gesture foreground",
+      "diagnosis": "Base shows full upper body; emotional intensity of casting is diluted by wide framing.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Medium → Face close-up + Hands as foreground frame + Shallow DOF",
+      "fixes": "Xiaolongnu raising both hands to chest level in a casting gesture with focused expression",
+      "keep": "Facial structure, hand position near collar, white Hanfu sleeves, silver embroidery, calm focused expression",
+      "story_state": "Xiaolongnu raising both hands to chest level in a casting gesture with focused expression",
+      "camera_type": "single-character face close-up",
+      "visual_focus": "Xiaolongnu raising both hands to chest level in a casting gesture with focused expression",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame03.png",
+      "edit_frame": "case_edit_frame03.png",
+      "final_frame": "case_final_frame03.png",
+      "beat_mapping": "B3",
+      "story_function": "Detail Activation / Prop Reveal",
+      "planned_edit_camera": "Close-up detail shot with character context",
+      "diagnosis": "Base is medium shot; sword details (runes, glow) are visible but not emphasized; hand-sword relation needs tightening.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Medium → Close-up detail + Sword as primary focus + Hands framing sword",
+      "fixes": "Ice sword floating horizontally in mid-air directly in front of Xiaolongnu's raised palms",
+      "keep": "Sword translucent ice texture, glowing runes, white tassel, hand proximity, character face softly visible in background",
+      "story_state": "Ice sword floating horizontally in mid-air directly in front of Xiaolongnu's raised palms",
+      "camera_type": "single-character close-up detail shot",
+      "visual_focus": "Ice sword floating horizontally in mid-air directly in front of Xiaolongnu's raised palms",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame04.png",
+      "edit_frame": "case_edit_frame04.png",
+      "final_frame": "case_final_frame04.png",
+      "beat_mapping": "B4",
+      "story_function": "Spatial Preparation / Grounding",
+      "planned_edit_camera": "Low-angle shot from ground level",
+      "diagnosis": "Base is wide shot at eye-level; lacks the sense of sword hovering just above moss; ground texture underutilized.",
+      "edit_level": "Level 3",
+      "edit_strategy": "Wide → Low-angle + Ground-level perspective + Sword-ground gap emphasis",
+      "fixes": "Ice sword floating just above the mossy ground directly in front of Xiaolongnu's white shoes",
+      "keep": "Sword horizontal orientation, moss texture, shoe proximity, character standing posture, cold blue ambient light",
+      "story_state": "Ice sword floating just above the mossy ground directly in front of Xiaolongnu's white shoes",
+      "camera_type": "single-character low-angle wide shot",
+      "visual_focus": "Ice sword floating just above the mossy ground directly in front of Xiaolongnu's white shoes",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame05.png",
+      "edit_frame": "case_edit_frame05.png",
+      "final_frame": "case_final_frame05.png",
+      "beat_mapping": "B5",
+      "story_function": "Motion Initiation / Contact Point",
+      "planned_edit_camera": "Foreground-detail composition (foot on blade)",
+      "diagnosis": "Base is medium side view; foot-blade contact point is clear but lacks tactile weight and dynamic tension.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Medium → Foreground-detail + Foot-blade contact as visual center + Side profile preserved",
+      "fixes": "Xiaolongnu's right foot stepping onto the middle of the floating sword blade while balancing on one leg",
+      "keep": "Foot placement on blade center, sword supporting weight, side profile silhouette, white robe flow, moss ground below",
+      "story_state": "Xiaolongnu's right foot stepping onto the middle of the floating sword blade while balancing on one leg",
+      "camera_type": "single-character close-up detail shot",
+      "visual_focus": "Xiaolongnu's right foot stepping onto the middle of the floating sword blade while balancing on one leg",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame06.png",
+      "edit_frame": "case_edit_frame06.png",
+      "final_frame": "case_final_frame06.png",
+      "beat_mapping": "B6",
+      "story_function": "Power Escalation / Full Mount",
+      "planned_edit_camera": "Overhead / High-angle wide shot",
+      "diagnosis": "Base is wide back view; hovering state is clear but lacks the spatial drama of elevation above forest floor.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Wide → High-angle overhead + Elevated perspective + Forest floor as depth reference",
+      "fixes": "Xiaolongnu standing fully on the Ice Sword hovering above the mossy ground with robes flowing backward",
+      "keep": "Full body on sword, sword horizontal under feet, elevated position above moss, bamboo forest background, wind-blown robes",
+      "story_state": "Xiaolongnu standing fully on the Ice Sword hovering above the mossy ground with robes flowing backward",
+      "camera_type": "single-character heroic wide shot",
+      "visual_focus": "Xiaolongnu standing fully on the Ice Sword hovering above the mossy ground with robes flowing backward",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame07.png",
+      "edit_frame": "case_edit_frame07.png",
+      "final_frame": "case_final_frame07.png",
+      "beat_mapping": "B7",
+      "story_function": "Motion / Trajectory Burst",
+      "planned_edit_camera": "Dynamic trajectory shot with motion blur",
+      "diagnosis": "Base has motion blur but character was incorrectly holding sword; edit must reinforce standing pose while amplifying speed.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Wide → Dynamic trajectory + Strong motion blur + Standing pose correction",
+      "fixes": "Xiaolongnu and the Ice Sword dashing forward along the bamboo path into the forest depth with strong speed lines",
+      "keep": "Standing pose on sword (NOT holding), forward motion direction, bamboo path trajectory, motion blur on background, robes blowing backward",
+      "story_state": "Xiaolongnu and the Ice Sword dashing forward along the bamboo path into the forest depth with strong speed lines",
+      "camera_type": "single-character Dynamic trajectory shot with motion blur",
+      "visual_focus": "Xiaolongnu and the Ice Sword dashing forward along the bamboo path into the forest depth with strong speed lines",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame08.png",
+      "edit_frame": "case_edit_frame08.png",
+      "final_frame": "case_final_frame08.png",
+      "beat_mapping": "B8",
+      "story_function": "Climax / Hero Ascension",
+      "planned_edit_camera": "Low-angle hero shot against sky",
+      "diagnosis": "Base is three-quarter back view at treetop level; lacks the heroic grandeur of ascending into open sky.",
+      "edit_level": "Level 4",
+      "edit_strategy": "Wide → Low-angle hero + Sky backdrop + Bamboo tops as lower frame",
+      "fixes": "Xiaolongnu flying high above the bamboo forest canopy on the Ice Sword with sky and clouds surrounding her",
+      "keep": "Standing pose on sword, sword horizontal under feet, sky background, bamboo tops below, white robes flowing in wind",
+      "story_state": "Xiaolongnu flying high above the bamboo forest canopy on the Ice Sword with sky and clouds surrounding her",
+      "camera_type": "single-character low-angle wide shot",
+      "visual_focus": "Xiaolongnu flying high above the bamboo forest canopy on the Ice Sword with sky and clouds surrounding her",
+      "style": "Cinematic high-quality animation style."
+    },
+    {
+      "base_frame": "case_base_frame09.png",
+      "edit_frame": "case_edit_frame09.png",
+      "final_frame": "case_final_frame09.png",
+      "beat_mapping": "B9",
+      "story_function": "Closure / Symbolic Departure",
+      "planned_edit_camera": "Extreme wide symbolic shot with negative space",
+      "diagnosis": "Base is wide shot; figure is small but could be more integrated with vast sky/cloud sea for poetic closure.",
+      "edit_level": "Level 3",
+      "edit_strategy": "Wide → Extreme wide + Cloud sea horizon + Figure as tiny silhouette",
+      "fixes": "Xiaolongnu and the Ice Sword as a tiny distant silhouette near the horizon above the cloud sea",
+      "keep": "Tiny figure scale, sword glow visible as point of light, vast sky and cloud background, sense of departure, bright atmosphere",
+      "story_state": "Xiaolongnu and the Ice Sword as a tiny distant silhouette near the horizon above the cloud sea",
+      "camera_type": "single-character heroic wide shot",
+      "visual_focus": "Xiaolongnu and the Ice Sword as a tiny distant silhouette near the horizon above the cloud sea",
+      "style": "Cinematic high-quality animation style."
+    }
+  ],
+  "resource_mode": "auto",
+  "pipeline_mode": "full",
+  "video_target_seconds": 24.0,
+  "long_shot_mode": true,
+  "ltx_video_candidates": 3,
+  "ltx_max_parallel": 3,
+  "ltx_grounded_safe_mode": true,
+  "resource_prompts": {
+    "case_char_01.png": "Generate case_char_01.png: A single full-body character reference of Xiaolongnu, standing in a neutral relaxed pose, front three-quarter view only, plain white background. She wears flowing white Hanfu robes with subtle silver embroidery on the collar and cuffs, long black hair tied simply with a white ribbon, fair skin, and calm elegant facial features. No props, no weapons, no complex background. High resolution, sharp focus on facial structure and robe details.",
+    "case_scene_01.png": "Generate case_scene_01.png: A serene bamboo forest clearing at twilight, soft blue ambient lighting, tall green bamboo stalks surrounding a small open space with mossy ground and scattered fallen leaves. A large flat rock is visible in the mid-ground left as a spatial anchor. Depth of field blurs distant bamboo, keeping the central clearing sharp. No characters, no props. Cinematic composition, realistic texture.",
+    "case_prop_01.png": "Generate case_prop_01.png: A single slender ancient Chinese Jian sword floating horizontally against a plain dark background. The blade is translucent ice-blue metal with faint glowing runes along the spine, emitting a subtle cold mist. The hilt is wrapped in white silk with a jade tassel. Sharp focus on the blade geometry and glow effects. No hands holding it, no characters. Hero product shot."
+  },
+  "resource_cards": [
+    {
+      "file": "case_char_01.png",
+      "resource_type": "character",
+      "entity_id": "char_xiaolongnu_01",
+      "display_name": "白衣侠女 (小龙女)",
+      "identity_sensitive": true,
+      "hero_product": true,
+      "visual_traits": [
+        "古风汉服",
+        "纯白配色",
+        "高马尾发型",
+        "白色发带",
+        "银色刺绣纹样",
+        "清冷气质",
+        "长发飘逸"
+      ],
+      "usable_for": [
+        "主角登场",
+        "施法动作",
+        "御剑姿态"
+      ],
+      "risk_notes": [
+        "需保持面部特征一致性",
+        "服装纹理细节需清晰"
+      ],
+      "must_reference_when_first_appears": true,
+      "must_reference_when_visible": true,
+      "state_tags": [
+        "clean"
+      ]
+    },
+    {
+      "file": "case_prop_01.png",
+      "resource_type": "prop",
+      "entity_id": "prop_flying_sword_01",
+      "display_name": "寒冰符文飞剑",
+      "identity_sensitive": false,
+      "hero_product": true,
+      "visual_traits": [
+        "半透明冰晶质感",
+        "剑身发光",
+        "神秘符文刻印",
+        "白色缠绕剑柄",
+        "青色玉珠挂饰",
+        "白色长流苏",
+        "周围伴有寒雾"
+      ],
+      "usable_for": [
+        "召唤特效",
+        "脚下站立平台",
+        "飞行载具"
+      ],
+      "risk_notes": [
+        "发光效果需与背景融合自然",
+        "符文细节不可模糊"
+      ],
+      "must_reference_when_first_appears": true,
+      "must_reference_when_visible": true
+    },
+    {
+      "file": "case_scene_01.png",
+      "resource_type": "scene",
+      "entity_id": "scene_bamboo_forest_01",
+      "display_name": "幽蓝竹林",
+      "identity_sensitive": false,
+      "hero_product": false,
+      "visual_traits": [
+        "密集垂直竹干",
+        "地面覆盖绿色苔藓",
+        "散落枯叶",
+        "左侧巨型岩石",
+        "冷蓝色调环境光",
+        "景深虚化背景"
+      ],
+      "usable_for": [
+        "起始场景",
+        "起飞背景",
+        "环境氛围渲染"
+      ],
+      "risk_notes": [
+        "竹子密度较高，需注意人物与背景的遮挡关系",
+        "光线较暗，需确保主体亮度足够"
+      ],
+      "must_reference_when_first_appears": true,
+      "scene_anchors": [
+        "ground_moss",
+        "large_rock_left",
+        "bamboo_trunks"
+      ]
+    }
+  ],
+  "resource_review_response": "## v6.8 §5–§6 资源图内容审查、Frame Entity Plan 与剧情落点校准\n\n### 1. 人物参考可用信息 (case_char_01.png)\n- **可见面：** 正面偏右（Three-quarter front view），面部清晰。\n- **服装：** 纯白交领汉服（White Hanfu），衣襟与袖口有银色云纹/花卉刺绣，宽袍大袖，腰间系白色丝带。\n- **发型：** 黑色长发，高马尾束发，头顶系有白色长飘带（随风向右侧飘动）。\n- **配饰：** 无明显金属首饰，仅发带与衣饰纹理。\n- **体型/气质：** 身形修长，站姿端正，双手自然交叠于腹前，神情清冷宁静。\n- **继承细节：** 必须保留白色主色调、银色刺绣纹理、高马尾加白飘带的发型结构、以及交领汉服的穿着方式。\n\n### 2. 场景参考可用锚点 (case_scene_01.png)\n- **主视角和构图：** 平视视角（Eye-level），纵深构图。前景为开阔的苔藓地面，中景左侧有一块巨大的灰色岩石，背景是密集垂直排列的竹林，形成强烈的线条感。\n- **真实存在的可定位元素：**\n    - **地面：** 覆盖着厚实的绿色苔藓（Green moss），散落着枯黄的竹叶/落叶。\n    - **岩石：** 画面左侧中景处有一块巨大的、表面粗糙的灰色岩石（Large grey rock），这是最重要的空间定位锚点。\n    - **植被：** 密集的绿色竹干（Vertical bamboo stalks），主要分布在左右两侧及后方。\n    - **路径：** 岩石右侧有一条隐约的土路延伸向竹林深处。\n- **光源方向和氛围：** 冷蓝色调环境光（Cold blue ambient light），光线似乎从竹林上方缝隙透入，整体氛围幽静、清冷、略带神秘感。\n\n### 3. 道具参考可用信息 (case_prop_01.png)\n- **形状：** 标准中式直剑（Jian），剑身修长笔直。\n- **材质：** 半透明冰晶质感（Translucent ice-crystal texture），剑身内部似乎有寒气流动。\n- **发光状态：** 剑身发出明亮的青蓝色冷光（Glowing cyan/blue light），周围环绕着白色的寒雾/烟气。\n- **细节：** 剑格（护手）为银色雕花金属，剑柄缠绕白色丝绳，末端挂有青色玉珠和白色长流苏。剑身上刻有发光的符文。\n\n### 4. 不可用/禁止使用的场景锚点\n- **禁止出现：** 任何人工建筑结构（如亭台楼阁、门槛、窗户、石阶、栏杆）。\n- **禁止出现：** 水面、河流、湖泊（场景图为陆地苔藓地）。\n- **禁止出现：** 其他人物或动物。\n- **禁止出现：** 暖色调光源（如夕阳、火光），必须保持冷蓝调。\n\n### 5. 剧情落点调整\n- **调整点：** 初步规划中若提到“站在石台上”或“站在路中央”，需修正为 **“站在苔藓地面上”** 或 **“站在巨石旁/前方的空地上”**。\n- **起飞逻辑：** 由于场景是密林，飞剑起飞的路径应设定为 **“沿着竹林间的空隙向上/向前飞行”**，而不是在开阔天空直接消失，这样能利用场景的纵深感。\n- **B1 站位：** 人物应站在画面中右侧的空地上，左侧留给巨石作为前景或背景层次，避免人物完全遮挡巨石导致空间感扁平。\n\n### 6. Frame Entity Plan (v6.8 §6)\n\n| Frame | Story State | Visible Characters | Visible Props | New Entities | Hero Product Visible | Focus | Forbidden | Planned reference_images |\n|---|---|---|---|---|---|---|---|---|\n| case_base_frame01.png | Xiaolongnu stands calmly in the bamboo forest clearing | Xiaolongnu | None | Xiaolongnu | No | Character face & robe | Sword, other people | case_char_01.png, case_scene_01.png |\n| case_base_frame02.png | Xiaolongnu raises hands to cast spell | Xiaolongnu | None | Hand gesture | No | Hands & upper body | Sword appearing yet | case_base_frame01.png, case_char_01.png |\n| case_base_frame03.png | Ice sword materializes in mid-air | Xiaolongnu | Ice Sword | Ice Sword | Yes | Sword glowing near hands | Sword touching ground | case_base_frame02.png, case_prop_01.png |\n| case_base_frame04.png | Sword lowers and hovers near feet | Xiaolongnu | Ice Sword | None | Yes | Sword tip near shoes | Sword flying away | case_base_frame03.png, case_prop_01.png |\n| case_base_frame05.png | Right foot steps onto the sword blade | Xiaolongnu | Ice Sword | None | Yes | Foot on blade | Full flight | case_base_frame04.png, case_prop_01.png |\n| case_base_frame06.png | Standing fully on sword, hovering above moss | Xiaolongnu | Ice Sword | None | Yes | Full body on sword | Touching ground | case_base_frame05.png, case_prop_01.png |\n| case_base_frame07.png | Sword dashes forward into the bamboo path | Xiaolongnu | Ice Sword | Motion blur | Yes | Back view, speed lines | Static pose | case_base_frame06.png, case_scene_01.png |\n| case_base_frame08.png | Flying high above bamboo tops | Xiaolongnu | Ice Sword | Sky/Bamboo tops | Yes | High angle, distance | Ground level details | case_base_frame07.png, case_scene_01.png |\n| case_base_frame09.png | Distant figure merging with twilight sky | Xiaolongnu (tiny) | Ice Sword (faint) | Distant sky | Yes (faint) | Atmosphere, negative space | Close up details | case_base_frame08.png, case_scene_01.png |\n\n### 7. 修订后的基础帧 9 帧规划表\n\n| 基础帧 | 对应9宫格beat | 剧情节点 | 基础镜头 | 开场或镜头意图 | 位置锚点 | 朝向关系 | 画面重点 | 连续性变化 |\n|---|---|---|---|---|---|---|---|---|\n| case_base_frame01.png | B1 | 小龙女伫立竹林，神情宁静 | Medium Shot | 建立人物身份与环境关系 | 双脚站在苔藓地面，巨石在左后方 | Three-quarter front view facing camera | 面部表情、白色长袍、竹林背景 | 初始状态 |\n| case_base_frame02.png | B2 | 抬手结印，准备召唤 | Medium Shot | 展示施法前摇动作 | 原地站立，双手抬至胸前 | Three-quarter front view facing camera | 手部姿态、衣袖褶皱 | 手臂从下垂变为抬起 |\n| case_base_frame03.png | B3 | 寒冰飞剑凭空显现 | Wide Shot | 关键道具首次出现 | 剑悬浮于身前半空，与手同高 | Three-quarter front view facing camera | 剑与人物的相对位置、剑的光效 | 新实体(Sword)出现 |\n| case_base_frame04.png | B4 | 飞剑平稳降至脚边 | Wide Shot | 建立人与剑的空间接触预备 | 剑尖触地，位于脚前苔藓上 | Three-quarter front view facing camera | 剑尖与鞋尖的接近关系 | 剑的位置从空中降至地面 |\n| case_base_frame05.png | B5 | 单脚踏上剑身 | Medium Shot | 动作启动，重心转移 | 右脚踩在剑身中部，剑离地少许 | Side view facing right | 脚与剑面的接触点、身体平衡 | 人物姿态从站立变为单脚支撑 |\n| case_base_frame06.png | B6 | 全身站上飞剑，衣袂扬起 | Wide Shot | 力量升级，完全控制道具 | 双脚并拢站在剑上，悬空于苔藓之上 | Back view facing away from camera | 全身轮廓、裙摆随风飘动 | 人物完全离开地面悬停 |\n| case_base_frame07.png | B7 | 飞剑加速向前冲出 | Wide Shot | 结果显现，动态模糊 | 人物与剑向画面深处竹林小径移动 | Back view facing away from camera | 运动轨迹、身后留下的气流 | 位置从静止变为高速位移 |\n| case_base_frame08.png | B8 | 飞越竹林顶端 | Wide Shot | 展示空间跨越与高度 | 位于竹梢上方，背景为天空 | Three-quarter back view | 人物与竹林顶部的层次关系 | 高度提升，背景变为天空 |\n| case_base_frame09.png | B9 | 化作光点消失在远方 | Wide Shot | 收束，留白意境 | 远处天际线，竹林变为剪影 | Back view facing away from camera | 渺小的身影、广阔的天空 | 人物变小直至融入背景 |\n\n### 8. case_base_frame01.png 开场意图与朝向选择\n\n**开场意图：**\nB1 的核心任务是确立“小龙女”这一角色身份及其所处的“幽静竹林”环境。观众需要清晰辨认人物的服饰特征（白衣、汉服）、面部神态（清冷、宁静）以及她与周围环境的基本比例关系。\n\n**朝向选择：**\n选用 **Three-quarter front view (三分之二正面)**。\n- **叙事功能：** 这种视角既能展示人物正面的服饰细节（领口、刺绣）和面部表情，又能通过身体的轻微侧转展现一定的立体感和空间纵深，避免纯正面视图的呆板。\n- **Subject–Camera Relation：** 人物面向镜头方向（facing the camera），确保观众能直接建立情感连接。相机位于人物前方略偏侧的位置，形成 `Camera -> Character -> Scene Core (Bamboo/Rock)` 的拓扑结构，让人物成为视觉焦点，同时背景竹林和左侧巨石作为环境衬托清晰可见。\n\n### 9. 第一基础帧 Reference Resolver + prompt\n\n**Reference Resolver JSON:**\n```json\n{\n  \"frame\": \"case_base_frame01.png\",\n  \"story_state\": \"Xiaolongnu stands calmly in the bamboo forest clearing\",\n  \"visible_entities\": [\"Xiaolongnu\", \"Bamboo Forest\"],\n  \"new_entities\": [\"Xiaolongnu\"],\n  \"hero_product_visible\": false,\n  \"focus_entities\": [\"Xiaolongnu\"],\n  \"reference_images\": [\n    \"case_char_01.png\",\n    \"case_scene_01.png\"\n  ],\n  \"reference_reason\": \"Frame 01 establishes the character and scene. Must use char resource for identity and scene resource for composition/anchors. No previous frame exists.\"\n}\n```\n\n**Prompt:**\n```text\nGenerate case_base_frame01.png: Use case_char_01.png as the strict reference for Xiaolongnu's identity, preserving her white Hanfu, silver embroidery, high ponytail with white ribbon, and calm facial expression. Use case_scene_01.png as the primary composition reference for the bamboo forest, preserving the mossy ground, scattered leaves, large grey rock on the left, and cold blue ambient lighting. Camera setup: medium shot with three-quarter front view, clearly showing Xiaolongnu standing on the mossy ground. Place Xiaolongnu in the center-right foreground, facing the camera, ensuring her facial structure, collar, and front robe pattern are clearly visible. The large grey rock is visible in the mid-ground left, and dense vertical bamboo stalks fill the background. Do not show any swords or magical effects, do not change her pose to action, and do not introduce architectural structures like stairs or pavilions. Cinematic wuxia fantasy style.\n```",
+  "ltx_width": 1920,
+  "ltx_height": 1088,
+  "ltx_resolution": "1080p",
+  "ltx_stitch_mode": "direct_concat",
+  "ltx_generate_bridge_candidates": true,
+  "ltx_use_bridge_at_export": true,
+  "long_shot_seconds": 12.0,
+  "ltx_frame_semantic_inventory": [],
+  "ltx_frame_pair_relations": [],
+  "ltx_shot_capacity_review": [
+    {
+      "shot_id": "shot_01",
+      "video_seconds": 12,
+      "reference_frame_count": 4,
+      "semantic_stage_count": 4,
+      "reference_frame_density": 0.33,
+      "continuous_motion_chain": false,
+      "semantic_density_verdict": "ok"
+    },
+    {
+      "shot_id": "shot_02",
+      "video_seconds": 12,
+      "reference_frame_count": 5,
+      "semantic_stage_count": 5,
+      "reference_frame_density": 0.42,
+      "continuous_motion_chain": true,
+      "semantic_density_verdict": "ok_continuous_chain"
+    }
+  ],
+  "ltx_plan_response": "# Reference Frame Inventory\n\n| Frame | Story State | Camera | Motion Potential |\n|---|---|---|---|\n| frame01 | Xiaolongnu standing calmly in bamboo clearing, grey rock left, cold blue ambient light | Medium-wide, foreground bamboo occlusion, depth layering | Static establishing; character identity anchor |\n| frame02 | Close-up face, hands raised near chest in casting gesture, focused expression | Face close-up, shallow DOF, hands as foreground frame | Gesture initiation; emotional focus |\n| frame03 | Ice sword floating horizontally mid-air, glowing runes visible, hands framing sword | Close-up detail on sword, face soft background | Manifestation climax; sword materialization |\n| frame04 | Sword hovering just above mossy ground in front of white shoes, low angle | Wide low-angle, ground-level perspective | Positioning phase; sword-ground spatial relation |\n| frame05 | Right foot stepping onto middle of floating blade, balancing on one leg | Medium side profile, foot-blade contact as visual center | Physical contact / boarding; high-risk pair with frame04 |\n| frame06 | Standing fully on sword hovering above moss, robes flowing backward, high-angle overhead | Wide elevated back view, forest floor as depth reference | Lift-off state; elevation established |\n| frame07 | Dashing forward along bamboo path on sword, strong motion blur, speed lines | Wide dynamic trajectory, forward motion direction | Acceleration phase; continuous flight chain |\n| frame08 | Flying high above bamboo canopy, sky and clouds surrounding, low-angle hero shot | Wide low-angle from below treetops, sky backdrop | Ascent breakthrough; altitude gain |\n| frame09 | Tiny distant silhouette near horizon above cloud sea, vast sky | Extreme wide, figure as tiny point of light | Departure closure; poetic scale reduction |\n\n## frame_semantic_inventory (JSON)\n\n```json\n[\n  {\"frame\": \"frame01\", \"semantic_stage\": \"establishing\", \"action_role\": \"character introduction in environment\", \"motion_direction\": \"static\", \"risk_level\": \"low\", \"suggested_use\": \"shot_01 opening anchor\"},\n  {\"frame\": \"frame02\", \"semantic_stage\": \"preparation\", \"action_role\": \"casting gesture initiation\", \"motion_direction\": \"hands rising to chest\", \"risk_level\": \"low\", \"suggested_use\": \"shot_01 second beat\"},\n  {\"frame\": \"frame03\", \"semantic_stage\": \"manifestation\", \"action_role\": \"sword materializes between palms\", \"motion_direction\": \"sword appearing horizontally\", \"risk_level\": \"medium\", \"suggested_use\": \"shot_01 third beat\"},\n  {\"frame\": \"frame04\", \"semantic_stage\": \"positioning\", \"action_role\": \"sword settles above ground before boarding\", \"motion_direction\": \"hovering steady\", \"risk_level\": \"medium\", \"suggested_use\": \"shot_01 closing anchor / bridge start\"},\n  {\"frame\": \"frame05\", \"semantic_stage\": \"contact\", \"action_role\": \"foot steps onto blade center\", \"motion_direction\": \"downward foot placement\", \"risk_level\": \"high\", \"suggested_use\": \"micro-action bridge target / shot_02 opening\"},\n  {\"frame\": \"frame06\", \"semantic_stage\": \"lift_off\", \"action_role\": \"fully standing on hovering sword above forest floor\", \"motion_direction\": \"upward hover\", \"risk_level\": \"medium\", \"suggested_use\": \"shot_02 second beat\"},\n  {\"frame\": \"frame07\", \"semantic_stage\": \"acceleration\", \"action_role\": \"dashing forward along bamboo path\", \"motion_direction\": \"forward horizontal\", \"risk_level\": \"medium\", \"suggested_use\": \"shot_02 third beat\"},\n  {\"frame\": \"frame08\", \"semantic_stage\": \"ascent\", \"action_role\": \"rising above bamboo canopy into open sky\", \"motion_direction\": \"upward vertical\", \"risk_level\": \"low\", \"suggested_use\": \"shot_02 fourth beat\"},\n  {\"frame\": \"frame09\", \"semantic_stage\": \"departure\", \"action_role\": \"tiny silhouette receding into cloud sea horizon\", \"motion_direction\": \"away into distance\", \"risk_level\": \"low\", \"suggested_use\": \"shot_02 closing anchor\"}\n]\n```\n\n## frame_pair_relations (JSON)\n\n```json\n[\n  {\"pair\": \"frame01→frame02\", \"relation_type\": \"same_motion_chain\", \"reason\": \"establishing to preparation: camera pushes in from medium-wide to face close-up while character raises hands\", \"recommended_handling\": \"smooth push-in + rack focus transition within shot_01\"},\n  {\"pair\": \"frame02→frame03\", \"relation_type\": \"same_motion_chain\", \"reason\": \"casting gesture culminates in sword manifestation; hands remain in frame as sword appears between them\", \"recommended_handling\": \"light flare from sword glow wipes into close-up of blade\"},\n  {\"pair\": \"frame03→frame04\", \"relation_type\": \"camera_jump\", \"reason\": \"close-up detail on sword cuts to wide low-angle showing full body + sword-ground gap; significant景别 change\", \"recommended_handling\": \"sword glow expands to fill lens then contracts into wide shot; or match-cut on sword horizontal axis\"},\n  {\"pair\": \"frame04→frame05\", \"relation_type\": \"high_risk_pair\", \"reason\": \"physical contact: foot stepping onto floating blade — requires precise tactile weight and balance depiction\", \"recommended_handling\": \"MUST be micro-action bridge (3-4s); overlap anchors frame04+frame05; do NOT塞入主shot尾部\"},\n  {\"pair\": \"frame05→frame06\", \"relation_type\": \"same_motion_chain\", \"reason\": \"boarding completes → lift-off; both show standing-on-sword state, only elevation differs\", \"recommended_handling\": \"continuous upward drift; camera rises from side profile to overhead back view\"},\n  {\"pair\": \"frame06→frame07\", \"relation_type\": \"same_motion_chain\", \"reason\": \"hover static → forward acceleration; same pose, motion state changes\", \"recommended_handling\": \"motion blur builds gradually; speed lines appear as sword surges forward\"},\n  {\"pair\": \"frame07→frame08\", \"relation_type\": \"environment_shift\", \"reason\": \"bamboo forest path → open sky above canopy; background completely changes\", \"recommended_handling\": \"upward camera tilt follows ascending sword; bamboo tops pass below as sky opens\"},\n  {\"pair\": \"frame08→frame09\", \"relation_type\": \"closure_shift\", \"reason\": \"hero-scale ascent → extreme wide departure; figure shrinks to silhouette\", \"recommended_handling\": \"camera pulls back continuously; figure diminishes into cloud sea horizon\"}\n]\n```\n\n---\n\n# Allowed Story Range\n\n- **Characters**: Xiaolongnu only (white Hanfu, silver embroidery, black hair in bun with white ribbon)\n- **Props**: One ice/crystal translucent sword with glowing cyan runes, white tassel with green bead at hilt\n- **Actions**: Standing still → raising hands in casting gesture → sword manifests between palms → sword hovers above moss → foot steps onto blade → standing on hovering sword → dashing forward through bamboo → ascending above canopy → flying into cloud sea as tiny silhouette\n- **Environments**: Bamboo forest clearing with grey rock and mossy ground → bamboo path → above bamboo canopy → open sky with clouds → cloud sea horizon\n- **Lighting**: Cold blue ambient in forest → bright daylight sky above\n\n# Forbidden Expansion List\n\n- No additional characters, enemies, or companions\n- No new weapons, artifacts, or magical effects beyond the ice sword's existing glow/runes\n- No transformation, costume change, or appearance alteration\n- No combat, fighting, or sword-swinging actions\n- No dialogue, speech, or vocalization\n- No scene changes to locations not shown (caves, palaces, water bodies, etc.)\n- No landing or returning to ground after departure\n- No additional magical creatures or animals\n- No weather effects beyond existing sky/clouds\n\n# Prompt Evidence Review\n\n| Prompt Element | Evidence Source |\n|---|---|\n| White Hanfu with silver embroidery | frame01, frame02, frame04, frame06 |\n| Black hair in bun with white ribbon | frame01, frame06, frame08 |\n| Ice/crystal translucent sword with glowing cyan runes | frame03, frame04, frame05, frame07 |\n| White tassel with green bead at hilt | frame04, frame06, frame08 |\n| Casting gesture (hands raised near chest) | frame02, frame03 |\n| Grey rock in bamboo clearing | frame01, frame04 |\n| Mossy forest floor | frame04, frame05, frame06 |\n| Bamboo forest environment | frame01, frame04, frame06, frame07, frame08 |\n| Motion blur / speed lines during dash | frame07 |\n| Cloud sea horizon departure | frame09 |\n| Cold blue ambient lighting in forest | frame01, frame04, frame06 |\n| Bright daylight sky above canopy | frame08, frame09 |\n\n---\n\n# Shot Plan\n\n| Shot | Reference Images | Duration | image_idxs | Shot Function | Stitch Mode | Transition Notes |\n|---|---|---|---|---|---|---|\n| shot_01 | frame01, frame02, frame03, frame04 | 12s | [0.00, 0.28, 0.58, 0.88] | 召唤飞剑：站立→结印→剑现→悬停定位 | direct_concat | frame01→02 push-in+rack focus; 02→03 sword glow light-wipe; 03→04 match-cut on sword horizontal axis |\n| Bridge 01-02 | frame04, frame05 | 4s | [0.00, 0.85] | 脚踩剑微动作桥：悬停→落脚 | direct_concat | motion-wipe: foot descends onto blade with glow flare transition |\n| shot_02 | frame05, frame06, frame07, frame08, frame09 | 12s | [0.00, 0.22, 0.45, 0.68, 0.88] | 御剑飞行：立足→升空→疾驰→破云→远去 | direct_concat | 05→06 upward drift; 06→07 motion blur build; 07→08 upward tilt past bamboo tops; 08→09 continuous pull-back |\n\n## Shot Capacity Review\n\n```json\n[\n  {\n    \"shot_id\": \"shot_01\",\n    \"video_seconds\": 12,\n    \"reference_frame_count\": 4,\n    \"semantic_stage_count\": 4,\n    \"reference_frame_density\": 0.33,\n    \"continuous_motion_chain\": false,\n    \"semantic_density_verdict\": \"ok\"\n  },\n  {\n    \"shot_id\": \"shot_02\",\n    \"video_seconds\": 12,\n    \"reference_frame_count\": 5,\n    \"semantic_stage_count\": 5,\n    \"reference_frame_density\": 0.42,\n    \"continuous_motion_chain\": true,\n    \"semantic_density_verdict\": \"ok_continuous_chain\"\n  }\n]\n```\n\n---\n\n# Python Blocks\n\n## shot_01 — 召唤飞剑（frame01–04）\n\n```python\nimages = [\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame01.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame02.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame03.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_final_frame04.png\",\n]\nimage_idxs = [0.00, 0.28, 0.58, 0.88]\nimage_strengths = [0.95, 0.95, 0.95, 0.93]\nvideo_seconds = 12\nprompt = \"\"\"Xiaolongnu stands calmly in a misty bamboo forest clearing, a large grey rock visible to her left, cold blue ambient light filtering through tall bamboo stalks with foreground bamboo creating natural occlusion. The camera smoothly pushes in from this medium-wide establishing shot toward her face as she raises both hands to chest level in a focused casting gesture, shallow depth of field blurring the bamboo background while keeping her calm expression and silver-embroidered white Hanfu sleeves sharp. A brilliant cyan glow erupts between her palms as a translucent ice sword materializes horizontally mid-air, its surface etched with luminous ancient runes, and the expanding sword-light performs a controlled light-wipe transition that fills the lens before contracting into a low-angle wide shot revealing the ice sword now hovering steadily just above the mossy ground directly in front of her white shoes, the large grey rock anchoring the left side of the frame. The sequence stays within the story shown by the reference frames, ending with the sword suspended in stillness awaiting her step.\"\"\"\nnegative_prompt = \"\"\"abrupt unrelated scene cut, uncontrolled random transition, slideshow effect, repeated still image, freeze frame, chaotic camera rotation, additional characters, new weapons, combat actions, costume change, dialogue, weather effects beyond existing lighting, landing after departure, magical creatures\"\"\"\ncontinuous_motion_chain = False\nsemantic_stage_count = 4\naction_chain_group = \"summoning_sequence\"\n```\n\n## Bridge 01-02 — 脚踩剑微动作桥（frame04→05）\n\n```python\nimages = [\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame04.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame05.png\",\n]\nimage_idxs = [0.00, 0.85]\nimage_strengths = [0.95, 0.95]\nvideo_seconds = 4\nprompt = \"\"\"The ice sword hovers steadily just above the mossy ground in front of Xiaolongnu's white shoes in the bamboo clearing. Her right foot lifts and descends with deliberate balance onto the center of the glowing blade, the sword supporting her weight as she shifts from standing beside it to standing upon it, the cyan rune-light flaring briefly at the point of contact before stabilizing. This physical boarding action bridges the summoning phase to the flight phase.\"\"\"\nnegative_prompt = \"\"\"abrupt cut, holding sword in hand, wrong foot placement, sword tilting violently, additional props, character falling, environment change\"\"\"\nshot_type = \"bridge\"\nbridge_subtype = \"micro_action\"\ntransition_carrier = \"foot descent motion-wipe with contact glow flare\"\nbridges_between_frames = \"frame04_frame05\"\nrisk_reason = \"physical_contact_foot_on_blade\"\ncan_skip_bridge = True\n```\n\n## shot_02 — 御剑飞行（frame05–09）\n\n```python\nimages = [\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame05.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame06.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame07.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame08.png\",\n    \"/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame09.png\",\n]\nimage_idxs = [0.00, 0.22, 0.45, 0.68, 0.88]\nimage_strengths = [0.95, 0.93, 0.92, 0.92, 0.90]\nvideo_seconds = 12\nprompt = \"\"\"Xiaolongnu stands balanced on the glowing ice sword, her right foot planted firmly on the blade center as the sword begins to rise above the mossy bamboo forest floor, her white robes flowing backward in the wind viewed from an elevated overhead angle. The sword surges forward along the bamboo path with intensifying speed, strong motion blur streaking the surrounding bamboo stalks and speed lines radiating from the blade as she dashes deeper into the forest. The camera tilts upward following her ascent as the sword breaks through the bamboo canopy into open bright sky, white clouds surrounding her with bamboo tops now far below framing the lower edge of the shot. The camera then pulls back continuously as she flies farther into the distance, her figure shrinking to a tiny luminous silhouette near the horizon above an endless sea of white clouds under a vast blue sky, the sword's cyan glow visible as a small point of light before the scene settles into serene stillness. The sequence stays within the story shown by the reference frames, depicting continuous flight without additional events.\"\"\"\nnegative_prompt = \"\"\"abrupt unrelated scene cut, uncontrolled random transition, slideshow effect, repeated still image, freeze frame, chaotic camera rotation, holding sword in hand, combat actions, additional characters, new weapons, costume change, dialogue, landing, returning to ground, magical creatures, weather storms\"\"\"\ncontinuous_motion_chain = True\nsemantic_stage_count = 5\naction_chain_group = \"flight_sequence\"\n```",
+  "ltx_shots": [
+    {
+      "shot_id": "shot_01",
+      "image_files": [
+        "case_final_frame01.png",
+        "case_final_frame02.png",
+        "case_final_frame03.png",
+        "case_final_frame04.png"
+      ],
+      "image_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame01.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame02.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame03.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame04.png"
+      ],
+      "image_idxs": [
+        0.02,
+        0.28,
+        0.58,
+        0.88
+      ],
+      "image_strengths": [
+        0.95,
+        0.95,
+        0.95,
+        0.93
+      ],
+      "video_seconds": 12.0,
+      "prompt": "Xiaolongnu stands calmly in a misty bamboo forest clearing, a large grey rock visible to her left, cold blue ambient light filtering through tall bamboo stalks with foreground bamboo creating natural occlusion. The camera smoothly pushes in from this medium-wide establishing shot toward her face as she raises both hands to chest level in a focused casting gesture, shallow depth of field blurring the bamboo background while keeping her calm expression and silver-embroidered white Hanfu sleeves sharp. A brilliant cyan glow erupts between her palms as a translucent ice sword materializes horizontally mid-air, its surface etched with luminous ancient runes, and the expanding sword-light performs a controlled light-wipe transition that fills the lens before contracting into a low-angle wide shot revealing the ice sword now hovering steadily just above the mossy ground directly in front of her white shoes, the large grey rock anchoring the left side of the frame. The sequence stays within the story shown by the reference frames, ending with the sword suspended in stillness awaiting her step.",
+      "negative_prompt": "abrupt unrelated scene cut, uncontrolled random transition, slideshow effect, repeated still image, freeze frame, chaotic camera rotation, additional characters, new weapons, combat actions, costume change, dialogue, weather effects beyond existing lighting, landing after departure, magical creatures, unsupported new plot, unrelated transformation, new character, new weapon, new prop, new location, changing ending, random power-up, inconsistent final state, extra heads, extra arms, extra faces, multiple bodies, uncontrolled transformation, changing outfit, wrong hairstyle, unrelated landscape, new building, changing platform, inconsistent prop shape, disappearing core object",
+      "output_file": "case_ltx_shot_01.mp4",
+      "shot_function": "",
+      "transition_notes": "",
+      "shot_type": "main",
+      "is_bridge": false,
+      "stitch_mode": "direct_concat",
+      "bridges_between": "",
+      "bridge_id": "",
+      "transition_carrier": "",
+      "can_skip_bridge": true,
+      "generated_by_default": false,
+      "bridge_subtype": "",
+      "bridges_between_frames": [],
+      "semantic_stage_count": 4,
+      "continuous_motion_chain": true,
+      "action_chain_group": "summoning_sequence",
+      "risk_reason": "",
+      "grounded_safe_mode": true,
+      "candidates_dir": "case_ltx_shot_01_candidates",
+      "reference_frame_count": 4,
+      "semantic_density_verdict": "ok",
+      "reference_frame_density": 0.333,
+      "capacity_verdict": "ok",
+      "capacity_issues": [],
+      "capacity_recommended_refs": "3–4"
+    },
+    {
+      "shot_id": "bridge_01_02",
+      "image_files": [
+        "case_final_frame04.png",
+        "case_final_frame05.png"
+      ],
+      "image_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame04.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame05.png"
+      ],
+      "image_idxs": [
+        0.02,
+        0.85
+      ],
+      "image_strengths": [
+        0.95,
+        0.95
+      ],
+      "video_seconds": 4.0,
+      "prompt": "The ice sword hovers steadily just above the mossy ground in front of Xiaolongnu's white shoes in the bamboo clearing. Her right foot lifts and descends with deliberate balance onto the center of the glowing blade, the sword supporting her weight as she shifts from standing beside it to standing upon it, the cyan rune-light flaring briefly at the point of contact before stabilizing. This physical boarding action bridges the summoning phase to the flight phase.",
+      "negative_prompt": "abrupt cut, holding sword in hand, wrong foot placement, sword tilting violently, additional props, character falling, environment change, abrupt unrelated scene cut, uncontrolled random transition, repeated still image, chaotic camera rotation, unsupported new plot, unrelated transformation, new character, new weapon, new prop, new location, changing ending, random power-up, inconsistent final state, extra heads, extra arms, extra faces, multiple bodies, uncontrolled transformation, changing outfit, wrong hairstyle, unrelated landscape, new building, changing platform, inconsistent prop shape, disappearing core object, hard cut feeling, motion discontinuity, slideshow effect",
+      "output_file": "case_ltx_bridge_01_02.mp4",
+      "shot_function": "",
+      "transition_notes": "",
+      "shot_type": "micro_action_bridge",
+      "is_bridge": true,
+      "stitch_mode": "direct_concat",
+      "bridges_between": "",
+      "bridge_id": "bridge_01_02",
+      "transition_carrier": "foot descent motion-wipe with contact glow flare",
+      "can_skip_bridge": true,
+      "generated_by_default": false,
+      "bridge_subtype": "micro_action",
+      "bridges_between_frames": [],
+      "semantic_stage_count": null,
+      "continuous_motion_chain": false,
+      "action_chain_group": "",
+      "risk_reason": "physical_contact_foot_on_blade",
+      "grounded_safe_mode": true,
+      "optional_for_export": true,
+      "candidates_dir": "case_ltx_bridge_01_02_candidates",
+      "reference_frame_count": 2,
+      "reference_frame_density": 0.5,
+      "capacity_verdict": "ok",
+      "capacity_issues": [],
+      "capacity_recommended_refs": "2–2"
+    },
+    {
+      "shot_id": "shot_02",
+      "image_files": [
+        "case_final_frame05.png",
+        "case_final_frame06.png",
+        "case_final_frame07.png",
+        "case_final_frame08.png",
+        "case_final_frame09.png"
+      ],
+      "image_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame05.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame06.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame07.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame08.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_final_frame09.png"
+      ],
+      "image_idxs": [
+        0.02,
+        0.22,
+        0.45,
+        0.68,
+        0.88
+      ],
+      "image_strengths": [
+        0.95,
+        0.93,
+        0.92,
+        0.92,
+        0.9
+      ],
+      "video_seconds": 12.0,
+      "prompt": "Xiaolongnu stands balanced on the glowing ice sword, her right foot planted firmly on the blade center as the sword begins to rise above the mossy bamboo forest floor, her white robes flowing backward in the wind viewed from an elevated overhead angle. The sword surges forward along the bamboo path with intensifying speed, strong motion blur streaking the surrounding bamboo stalks and speed lines radiating from the blade as she dashes deeper into the forest. The camera tilts upward following her ascent as the sword breaks through the bamboo canopy into open bright sky, white clouds surrounding her with bamboo tops now far below framing the lower edge of the shot. The camera then pulls back continuously as she flies farther into the distance, her figure shrinking to a tiny luminous silhouette near the horizon above an endless sea of white clouds under a vast blue sky, the sword's cyan glow visible as a small point of light before the scene settles into serene stillness. The sequence stays within the story shown by the reference frames, depicting continuous flight without additional events.",
+      "negative_prompt": "abrupt unrelated scene cut, uncontrolled random transition, slideshow effect, repeated still image, freeze frame, chaotic camera rotation, holding sword in hand, combat actions, additional characters, new weapons, costume change, dialogue, landing, returning to ground, magical creatures, weather storms, unsupported new plot, unrelated transformation, new character, new weapon, new prop, new location, changing ending, random power-up, inconsistent final state, extra heads, extra arms, extra faces, multiple bodies, uncontrolled transformation, changing outfit, wrong hairstyle, unrelated landscape, new building, changing platform, inconsistent prop shape, disappearing core object, static pose, still image sequence",
+      "output_file": "case_ltx_shot_02.mp4",
+      "shot_function": "",
+      "transition_notes": "",
+      "shot_type": "main",
+      "is_bridge": false,
+      "stitch_mode": "direct_concat",
+      "bridges_between": "",
+      "bridge_id": "",
+      "transition_carrier": "",
+      "can_skip_bridge": true,
+      "generated_by_default": false,
+      "bridge_subtype": "",
+      "bridges_between_frames": [],
+      "semantic_stage_count": 5,
+      "continuous_motion_chain": true,
+      "action_chain_group": "flight_sequence",
+      "risk_reason": "",
+      "grounded_safe_mode": true,
+      "candidates_dir": "case_ltx_shot_02_candidates",
+      "reference_frame_count": 5,
+      "semantic_density_verdict": "ok_continuous_chain",
+      "reference_frame_density": 0.417,
+      "capacity_verdict": "reject",
+      "capacity_issues": [
+        "12s 主 shot 使用 5 帧但含 5 个独立语义阶段，应拆 micro-bridge 或减少阶段（v1.7 §4.2）"
+      ],
+      "capacity_recommended_refs": "3–4"
+    }
+  ],
+  "ltx_shots_done": [
+    "bridge_01_02",
+    "shot_01",
+    "shot_02"
+  ],
+  "ltx_planned_long_shot_seconds": 12.0,
+  "ltx_planned_stitch_mode": "direct_concat",
+  "ltx_planned_generate_bridge": true,
+  "ltx_planned_use_bridge_at_export": true
+}

@@ -1,0 +1,312 @@
+{
+  "case_name": "case_yujian_aliyun",
+  "frames": {
+    "case_base_frame01.png": {
+      "stage": "base",
+      "file": "case_base_frame01.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame01.png: Use case_char_01.png as the strict reference for Xiaolongnu's identity, preserving her white Hanfu, silver embroidery, high ponytail with white ribbon, and calm facial expression. Use case_scene_01.png as the primary composition reference for the bamboo forest, preserving the mossy ground, scattered leaves, large grey rock on the left, and cold blue ambient lighting. Camera setup: medium shot with three-quarter front view, clearly showing Xiaolongnu standing on the mossy ground. Place Xiaolongnu in the center-right foreground, facing the camera, ensuring her facial structure, collar, and front robe pattern are clearly visible. The large grey rock is visible in the mid-ground left, and dense vertical bamboo stalks fill the background. Do not show any swords or magical effects, do not change her pose to action, and do not introduce architectural structures like stairs or pavilions. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_char_01.png",
+        "case_scene_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_char_01.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_scene_01.png"
+      ],
+      "updated_at": 1781074331.534531,
+      "chosen_candidate": 2,
+      "attempts": 1
+    },
+    "case_base_frame02.png": {
+      "stage": "base",
+      "file": "case_base_frame02.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame02.png: Use case_base_frame01.png as the direct source for the exact story state of Xiaolongnu standing in the bamboo forest, preserving the mossy ground, large grey rock on the left, and cold blue lighting. Use case_char_01.png as the strict reference for Xiaolongnu's identity and arm movement, ensuring her white Hanfu sleeves and silver embroidery remain consistent while she raises both hands to chest level in a casting gesture. Camera setup: medium shot with three-quarter front view, clearly showing her facial structure and the specific hand position near her collar. Place Xiaolongnu in the same center-right foreground position as the previous frame, facing the camera. Do not show any swords or magical effects yet, do not change the camera angle to side or back view, and do not introduce architectural structures. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame01.png",
+        "case_char_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame01.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_char_01.png"
+      ],
+      "updated_at": 1781075164.5843067,
+      "chosen_candidate": 1,
+      "attempts": 1
+    },
+    "case_base_frame03.png": {
+      "stage": "base",
+      "file": "case_base_frame03.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame03.png: Use case_base_frame02.png as the direct source for the exact story state of Xiaolongnu standing with hands raised in a casting gesture, preserving the bamboo forest background and cold blue lighting. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice-crystal texture, glowing cyan runes, white wrapped hilt, and flowing tassel are accurately rendered. Camera setup: medium shot with three-quarter front view, clearly showing the sword floating horizontally in mid-air directly in front of her palms. Place the sword at chest height, aligned with her hand position, while keeping Xiaolongnu's facial expression calm and focused. Do not show the sword touching the ground, do not change the camera angle to side view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame02.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame02.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781076019.2174695,
+      "chosen_candidate": 3,
+      "attempts": 1
+    },
+    "case_base_frame04.png": {
+      "stage": "base",
+      "file": "case_base_frame04.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame04.png: Use case_base_frame03.png as the direct source for the exact story state of Xiaolongnu standing in the bamboo forest, preserving her white Hanfu, calm expression, and the cold blue lighting. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice texture, glowing runes, and white tassel are accurately rendered. Camera setup: wide shot with three-quarter front view, clearly showing the sword floating horizontally just above the mossy ground, directly in front of her shoes. Place Xiaolongnu in the center-right foreground, looking down slightly at the sword, while keeping the large grey rock visible on the left. Do not show the sword touching the ground, do not change the camera angle to side view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame03.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame03.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781076878.2072673,
+      "chosen_candidate": 4,
+      "attempts": 1
+    },
+    "case_base_frame05.png": {
+      "stage": "base",
+      "file": "case_base_frame05.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame05.png: Use case_base_frame04.png as the direct source for the exact story state of Xiaolongnu in the bamboo forest, preserving the mossy ground, large grey rock on the left, and cold blue lighting. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice texture, glowing runes, and white tassel are accurately rendered. Camera setup: medium shot with side view facing right, clearly showing Xiaolongnu's right foot stepping onto the middle of the floating sword blade. Place Xiaolongnu in profile, balancing on one leg with her left leg still on the mossy ground, while keeping her white Hanfu and high ponytail consistent. Do not show the sword touching the ground, do not change the camera angle to front view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame04.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame04.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781077709.293,
+      "chosen_candidate": 2,
+      "attempts": 1
+    },
+    "case_base_frame06.png": {
+      "stage": "base",
+      "file": "case_base_frame06.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame06.png: Use case_base_frame05.png as the direct source for the exact story state of Xiaolongnu in the bamboo forest, preserving the mossy ground, large grey rock on the left, and cold blue lighting. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice texture, glowing runes, and white tassel are accurately rendered. Camera setup: wide shot with back view facing away from camera, clearly showing Xiaolongnu standing with both feet together on the floating sword blade, hovering slightly above the moss. Place Xiaolongnu in the center-right, facing into the depth of the bamboo forest, with her white robes and hair ribbon flowing gently in the wind. Do not show the sword touching the ground, do not change the camera angle to front view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame05.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame05.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781078565.437661,
+      "chosen_candidate": 2,
+      "attempts": 1
+    },
+    "case_base_frame07.png": {
+      "stage": "base",
+      "file": "case_base_frame07.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame07.png: Use case_base_frame06.png as the direct source for the exact story state of Xiaolongnu standing on the Ice Sword in the bamboo forest, preserving the mossy ground, large grey rock on the left, and cold blue lighting. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice texture, glowing runes, and white tassel are accurately rendered even with motion. Camera setup: wide shot with back view facing away from camera, clearly showing Xiaolongnu and the sword dashing forward along the bamboo path into the depth of the forest. Place the figure in the center, moving away from the viewer, with strong motion blur on the background bamboo and wind blowing her robes and hair backward. Do not show the sword touching the ground, do not change the camera angle to front view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame06.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame06.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781079422.998076,
+      "chosen_candidate": 3,
+      "attempts": 1
+    },
+    "case_base_frame08.png": {
+      "stage": "base",
+      "file": "case_base_frame08.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame08.png: Use case_base_frame06.png as the strict spatial reference for Xiaolongnu standing firmly on the Ice Sword, correcting any previous running or holding errors. Use case_prop_01.png as the strict reference for the Ice Sword, ensuring its translucent ice texture and glowing runes are visible beneath her feet. Camera setup: wide shot with three-quarter back view, clearly showing Xiaolongnu flying high above the bamboo forest canopy. Place the figure in the upper center of the frame, with the sword horizontal under her feet, surrounded by sky and the tops of bamboo stalks below. Her white robes flow backward due to wind. Do NOT show her holding the sword, do NOT show her running on the ground, and do NOT show her feet touching anything else. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame06.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame06.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781080263.1423028,
+      "chosen_candidate": 1,
+      "attempts": 1
+    },
+    "case_base_frame09.png": {
+      "stage": "base",
+      "file": "case_base_frame09.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_base_frame09.png: Use case_base_frame08.png as the direct source for the exact story state of the high-altitude sky and bamboo top environment, preserving the bright atmosphere. Use case_prop_01.png as the strict reference for the Ice Sword's glowing cyan light, ensuring it remains visible as a small point of light. Camera setup: wide shot with back view facing away from camera, clearly showing Xiaolongnu and the sword as a tiny, distant silhouette near the horizon line. Place the figure in the upper center, surrounded by vast sky and faint clouds, emphasizing the sense of departure and negative space. Do not show close-up details, do not change the camera angle to front view, and do not introduce other characters. Cinematic wuxia fantasy style.",
+      "reference_images": [
+        "case_base_frame08.png",
+        "case_prop_01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame08.png",
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_prop_01.png"
+      ],
+      "updated_at": 1781081094.5191674,
+      "chosen_candidate": 1,
+      "attempts": 1
+    },
+    "case_edit_frame01.png": {
+      "stage": "edit",
+      "file": "case_edit_frame01.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame01.png: Use case_base_frame01.png as the direct source for the exact story state of Xiaolongnu standing calmly in the bamboo clearing with the large grey rock visible on the left. Camera transformation: create a single-character heroic wide shot with strong focus on Xiaolongnu framed by blurred foreground bamboo stalks to establish deep spatial layering and environmental immersion. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame01.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame01.png"
+      ],
+      "updated_at": 1781081682.8478258,
+      "base_frame": "case_base_frame01.png",
+      "chosen_candidate": 1,
+      "story_function": "Establish / Identity Reveal",
+      "planned_edit_camera": "Stronger wide shot with foreground depth"
+    },
+    "case_edit_frame02.png": {
+      "stage": "edit",
+      "file": "case_edit_frame02.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame02.png: Use case_base_frame02.png as the direct source for the exact story state of Xiaolongnu raising both hands to chest level in a casting gesture with a focused expression. Camera transformation: create a single-character face close-up with strong focus on her awakened eyes and calm expression, using her raised hands as a soft foreground frame to enhance depth. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame02.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame02.png"
+      ],
+      "updated_at": 1781082223.6719434,
+      "base_frame": "case_base_frame02.png",
+      "chosen_candidate": 4,
+      "story_function": "Awakening / Spell Casting",
+      "planned_edit_camera": "Face close-up with hand gesture foreground"
+    },
+    "case_edit_frame03.png": {
+      "stage": "edit",
+      "file": "case_edit_frame03.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame03.png: Use case_base_frame03.png as the direct source for the exact story state of the ice sword floating horizontally in mid-air directly in front of Xiaolongnu's raised palms. Camera transformation: create a single-character close-up detail shot with strong focus on the glowing runes and translucent texture of the sword blade, while keeping her hands framing the weapon and her face softly visible in the background as context. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame03.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame03.png"
+      ],
+      "updated_at": 1781082783.852974,
+      "base_frame": "case_base_frame03.png",
+      "chosen_candidate": 5,
+      "story_function": "Detail Activation / Prop Reveal",
+      "planned_edit_camera": "Close-up detail shot with character context"
+    },
+    "case_edit_frame04.png": {
+      "stage": "edit",
+      "file": "case_edit_frame04.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame04.png: Use case_base_frame04.png as the direct source for the exact story state of the ice sword floating just above the mossy ground directly in front of Xiaolongnu's white shoes. Camera transformation: create a single-character low-angle wide shot from ground level with strong focus on the gap between the hovering sword and the moss texture, emphasizing the suspension height relative to her feet. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame04.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame04.png"
+      ],
+      "updated_at": 1781083326.61036,
+      "base_frame": "case_base_frame04.png",
+      "chosen_candidate": 4,
+      "story_function": "Spatial Preparation / Grounding",
+      "planned_edit_camera": "Low-angle shot from ground level"
+    },
+    "case_edit_frame05.png": {
+      "stage": "edit",
+      "file": "case_edit_frame05.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame05.png: Use case_base_frame05.png as the direct source for the exact story state of Xiaolongnu stepping her right foot onto the middle of the floating sword blade while balancing on one leg. Camera transformation: create a single-character close-up detail shot with strong focus on the contact point between her white shoe and the glowing ice sword, preserving her side profile silhouette and the flowing white robe as context. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame05.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame05.png"
+      ],
+      "updated_at": 1781083870.3596544,
+      "base_frame": "case_base_frame05.png",
+      "chosen_candidate": 4,
+      "story_function": "Motion Initiation / Contact Point",
+      "planned_edit_camera": "Foreground-detail composition (foot on blade)"
+    },
+    "case_edit_frame06.png": {
+      "stage": "edit",
+      "file": "case_edit_frame06.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame06.png: Use case_base_frame06.png as the direct source for the exact story state of Xiaolongnu standing fully on the Ice Sword hovering above the mossy ground with robes flowing backward. Camera transformation: create a single-character high-angle overhead shot with strong focus on the elevated position of the sword and character relative to the bamboo forest floor below, emphasizing the sense of suspension and vertical depth. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame06.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame06.png"
+      ],
+      "updated_at": 1781084413.3573604,
+      "base_frame": "case_base_frame06.png",
+      "chosen_candidate": 1,
+      "story_function": "Power Escalation / Full Mount",
+      "planned_edit_camera": "Overhead / High-angle wide shot"
+    },
+    "case_edit_frame07.png": {
+      "stage": "edit",
+      "file": "case_edit_frame07.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame07.png: Use case_base_frame07.png as the direct source for the exact story state of Xiaolongnu standing on the Ice Sword dashing forward along the bamboo path into the forest depth. Camera transformation: create a dynamic trajectory shot with strong motion blur, emphasizing the forward speed and the glowing sword trail while keeping her standing pose distinct from running. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame07.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame07.png"
+      ],
+      "updated_at": 1781085556.111592,
+      "base_frame": "case_base_frame07.png",
+      "chosen_candidate": 3,
+      "story_function": "Motion / Trajectory Burst",
+      "planned_edit_camera": "Dynamic trajectory shot with motion blur"
+    },
+    "case_edit_frame08.png": {
+      "stage": "edit",
+      "file": "case_edit_frame08.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame08.png: Use case_base_frame08.png as the direct source for the exact story state of Xiaolongnu standing firmly on the Ice Sword high above the bamboo forest canopy with white robes flowing in the wind against a bright sky. Camera transformation: create a single-character low-angle hero shot with strong focus on her ascending figure silhouetted against the clouds and the sword hovering above the treetops. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame08.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame08.png"
+      ],
+      "updated_at": 1781086096.613023,
+      "base_frame": "case_base_frame08.png",
+      "chosen_candidate": 4,
+      "story_function": "Climax / Hero Ascension",
+      "planned_edit_camera": "Low-angle hero shot against sky"
+    },
+    "case_edit_frame09.png": {
+      "stage": "edit",
+      "file": "case_edit_frame09.png",
+      "status": "picked",
+      "generation_prompt": "Generate case_edit_frame09.png: Use case_base_frame09.png as the direct source for the exact story state of Xiaolongnu and the Ice Sword appearing as a tiny distant silhouette near the horizon above a vast sea of clouds. Camera transformation: create an extreme wide symbolic shot with strong focus on the immense negative space of the sky and the small figure departing into the distance. Cinematic Chinese fantasy 3D animation style.",
+      "reference_images": [
+        "case_base_frame09.png"
+      ],
+      "reference_paths": [
+        "/home/mx/whw/seedance_fuke/qwen/case_yujian_aliyun/case_base_frame09.png"
+      ],
+      "updated_at": 1781086642.888219,
+      "base_frame": "case_base_frame09.png",
+      "chosen_candidate": 1,
+      "story_function": "Closure / Symbolic Departure",
+      "planned_edit_camera": "Extreme wide symbolic shot with negative space"
+    }
+  },
+  "updated_at": 1781086642.8882284
+}
