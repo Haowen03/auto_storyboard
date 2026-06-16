@@ -25,8 +25,11 @@ LTX 扩展：`ltx_workflow.py`
 ## case_yujian效果展示
 
 ![yujian.png](yujian.png)
-<video src="case_ltx_shot1.mp4" controls width="800"></video>
-<video src="case_ltx_shot2.mp4" controls width="800"></video>
+
+
+https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c
+https://github.com/user-attachments/assets/b4feae7b-8619-475a-86f6-ac824931e39f
+
 
 
 ---
