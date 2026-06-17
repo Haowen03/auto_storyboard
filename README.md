@@ -37,12 +37,18 @@ https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c
 
 ## TODO
 
-| # | 方向 | 说明 |
-|---|------|------|
-| 1 | **Bridge shot 衔接优化** | 优化 micro-action bridge / transition bridge 的 prompt 与拼接策略，减少跨 shot 硬切感；完善 `direct_concat` / `trim_overlap` 下的剪辑余量与转场载体描述 |
-| 2 | **台词驱动的音视频规划** | 在 LTX shot 规划阶段加入台词（对白/旁白）与时间轴，输出音画同步的 prompt 与参数；衔接 TTS / 口型或音频桥 |
-| 3 | **接入更先进的音视频生成模型** | 在现有参考帧 + shot 规划框架上，替换或扩展下游生成后端（超越当前 LTX 2.3 keyframe_interpolation），支持更高质量、更长时长、更强音画一致性的 shot 产出 |
+### 待办
 
+- [ ] **Bridge shot 衔接优化** — 优化 micro-action bridge / transition bridge 的 prompt 与拼接策略，减少跨 shot 硬切感；bridge shot的prompt需要试验更规范的模板
+- [ ] **台词驱动的音视频规划** — 在 LTX shot 规划阶段加入台词（对白/旁白）与时间轴，输出音画同步的 prompt 与参数；可以考虑之前试验的“数字人TTS人声一致性路线”
+- [ ] **接入更先进的音视频生成模型** — 在现有参考帧 + shot 规划框架上，替换或扩展下游生成后端（超越当前 LTX 2.3 keyframe_interpolation），支持更高质量、更长时长、更强音画一致性的 shot 产出
+
+### 已完成
+
+- [x] 多宫格参考帧两阶段生成（base 剧情/环境 + edit 镜头/分镜）
+- [x] LTX shot 语义动作链规划（v1.7）
+- [x] Bridge shot 基础框架（v1.4–v1.5）
+- [x] Docker 部署文档与脚本（`deploy/`）
 ---
 
 ## 第一阶段：多参考帧生成
