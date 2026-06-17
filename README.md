@@ -23,7 +23,7 @@ LTX 扩展：`ltx_workflow.py`
 
 ---
 
-## case_yujian效果展示
+## case效果展示
 
 ![yujian.png](yujian.png)
 
