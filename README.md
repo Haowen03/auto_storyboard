@@ -214,7 +214,7 @@ qwen/<case-name>/
 
 ## Docker 环境配置（whw 容器）
 
-**可以在新服务器上完整复现。** 详细步骤见 **[deploy/DEPLOY.md](../deploy/DEPLOY.md)**（镜像导出/导入、模型挂载、服务启动、检查清单）。
+**可以在新服务器上完整复现。** 详细步骤见 **[deploy/DEPLOY.md](deploy/DEPLOY.md)**（镜像导出/导入、模型挂载、服务启动、检查清单）。
 
 本工作流在 **Docker 容器 `whw`** 中开发与运行。容器负责跑 `auto_storyboard` CLI；GPU 推理由 **Qwen-Image 服务（:9000）** 与 **LTX 服务（:8000）** 提供（`--network=host`，通过 HTTP 调用）。
 
