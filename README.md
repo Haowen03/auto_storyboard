@@ -24,6 +24,12 @@ LTX 扩展：`ltx_workflow.py`
 ---
 
 ## case_yujian效果展示
+<img width="1322" height="361" alt="image" src="https://github.com/user-attachments/assets/00cdb4b4-b2f7-45fa-b6ba-d12c3a8c8fa5" />
+
+<img width="1466" height="410" alt="image" src="https://github.com/user-attachments/assets/b466bc37-23a1-4f4e-8d6f-7f760800372b" />
+
+<img width="1461" height="403" alt="image" src="https://github.com/user-attachments/assets/a31c94ef-abbe-4be0-be14-67498eeea280" />
+
 
 ![yujian.png](yujian.png)
 
