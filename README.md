@@ -33,22 +33,8 @@ https://github.com/user-attachments/assets/b4feae7b-8619-475a-86f6-ac824931e39f
 
 
 ---
-```mermaid
-flowchart TB
-    subgraph P1["第一阶段：多参考帧生成"]
-        A[Idea + VLM 分镜规划] --> B[资源库 char/scene/prop]
-        B --> C["case_base_frame<br/>剧情连续 + 环境一致"]
-        C --> D["case_edit_frame<br/>镜头多样 + 分镜连贯"]
-        D --> E[case_final_frame 成片参考帧]
-    end
+<img width="1672" height="941" alt="工作流概览" src="https://github.com/user-attachments/assets/68d866f0-2dd3-405a-a303-38fecac89564" />
 
-    subgraph P2["第二阶段：LTX 参考帧生音视频"]
-        F[VLM Shot 规划<br/>语义动作链 + 容量] --> G[keyframe_interpolation 逐 shot 抽卡]
-        G --> H[人工选片 → 拼接成片]
-    end
-
-    E --> F
-```
 ---
 
 ## 第一阶段：多参考帧生成
