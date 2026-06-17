@@ -465,7 +465,7 @@ auto_storyboard/
 ## 典型用法示例
 
 以下命令在 **whw 容器内**执行（路径 `/home/mx/whw/seedance_fuke`）：
-
+（注意：目前实验的配置跑的1080p，跑九宫格参考帧生视频单个long shot是12s，15s会报显存；降低分辨率可以得到更长的shot）
 ```bash
 # 1. 只做 9 宫格参考帧
 python auto_storyboard/run.py \
