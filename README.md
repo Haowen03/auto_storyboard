@@ -28,7 +28,8 @@ LTX 扩展：`ltx_workflow.py`
 ![yujian.png](yujian.png)
 
 
-https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c \n
+https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c
+
 https://github.com/user-attachments/assets/b4feae7b-8619-475a-86f6-ac824931e39f
 
 
