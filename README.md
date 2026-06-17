@@ -10,6 +10,7 @@ LTX 扩展：`ltx_workflow.py`
 ---
 
 ## 工作流总览
+<img width="1672" height="941" alt="工作流概览" src="https://github.com/user-attachments/assets/68d866f0-2dd3-405a-a303-38fecac89564" />
 
 
 | 阶段    | `--pipeline` | 产出                             |
@@ -27,15 +28,11 @@ LTX 扩展：`ltx_workflow.py`
 ![yujian.png](yujian.png)
 
 
-https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c
+https://github.com/user-attachments/assets/b04834f1-14e6-483f-97f6-88a62985e31c \n
 https://github.com/user-attachments/assets/b4feae7b-8619-475a-86f6-ac824931e39f
 
 
 
----
-<img width="1672" height="941" alt="工作流概览" src="https://github.com/user-attachments/assets/68d866f0-2dd3-405a-a303-38fecac89564" />
-
----
 
 ## 第一阶段：多参考帧生成
 
